@@ -30,7 +30,7 @@ Occupation:
 **Scenario**
 **Goals**
 
-**Temi IT** - To be renamed!
+**Stanley** - To be renamed!
 **Summary**
 **Personal Background**
 Age:
