@@ -1,4 +1,49 @@
-**Stewart does **
+**1C - Stewart tracks progress **
+```mermaid
+sequenceDiagram
+  actor Stewart
+  actor Website
+  actor Server
+  actor Module Database
+  actor Student Database
+  Stewart->>Website: Open Study Planner
+  Stewart->>Website: Enter username and password
+  activate Website
+  Website->>Server: Request credential validation
+  activate Server
+  Server->>Student Database: Validate credentials
+  activate Student Database
+  alt happy path
+    Student Database -->> Server: Student data
+    deactivate Student Database
+    Server -->> Website: Student data
+    deactivate Server
+    Website -->> Stewart: Logged in
+    deactivate Website
+    Stewart ->> Website: Select module
+    activate Website
+    Website ->> Server: request Stewart's data for specified module
+    activate Server
+    Server ->> Module Database: request Stewart's data for specified module
+    activate Module Database
+    Module Database -->> Server: Stewart's task progress data
+    deactivate Module Database
+    Server -->> Website: Stewart's task progress data
+    deactivate Server
+    Website -->> Stewart: Display progress
+    deactivate Website
+  else login failiure
+    Student Database -->> Server: No student found
+    Server -->> Website: Invalid credentials
+    Website -->> Stewart: Show login error
+  else data failiure
+    Module Database -->> Server: data not found
+    Server -->> Website: data not found
+    Website -->> Stewart: Show data not found error
+  end
+
+  
+```
 
 
 **2C - Cassie creates a task - Sucess Path**
