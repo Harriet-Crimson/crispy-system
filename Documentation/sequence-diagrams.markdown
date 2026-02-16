@@ -41,5 +41,24 @@ sequenceDiagram
   deactivate Server
   Website-->>Cassie: Confirms tasks is complete
   deactivate Website
-
+```
+**2C - Cassie creates a task - Failure Path**
+```mermaid
+sequenceDiagram
+  actor Cassie
+  actor Website
+  actor Server
+  actor Module Database
+  Cassie->>Website: Select module
+  activate Website
+  Website->>Server: Request to acess module
+  activate Server
+  Server->>Module Database: Select relevant module records
+  activate Module Database
+  Module Database-->>Server: Module does not exist
+  deactivate Module Database
+  Server-->>Website: Error message
+  deactivate Server
+  Website-->>Cassie: Unable to find module
+  deactivate Website
 ```
