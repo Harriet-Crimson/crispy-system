@@ -1,4 +1,4 @@
-**1C - Stewart tracks progress **
+1C - Stewart tracks progress
 ```mermaid
 sequenceDiagram
   actor Stewart
