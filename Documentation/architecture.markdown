@@ -1,6 +1,6 @@
 
-The requirement for the hub to store module information, means that our system will be connected to that.
-The need for different types of users to be able to access the system, led to us designing our systen around different access levels.
+The requirement for the hub to store module information means that our system will be have to be connected to the hub.
+The need for different types of users to be able to access the system led to us designing our systen around different access levels.
 
 The responsibilities are seperated into different key areas to reflect the different needs of the different stakeholders. With the central focus being on the student users, it reflects that they will be the main system users.
 We are using a static container for the HTML and CSS separatley from dynamic the backend, so that the application will be more secure.
