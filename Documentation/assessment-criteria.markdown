@@ -41,9 +41,9 @@ AC-2C2: Given module does not exist, when Cassie creates a task, then study plan
 
 AC-2C3: Given Cassie has permission to add a task and has internet access, when Cassie creates a task, then The booking should be updated and relayed to the students in a timely manner. [Core]
 
-AC-2D1: Given module does not already exist, when Cassie creates a task, then new module is created. [Core]
+AC-2D1: Given module does not already exist, when Cassie creates the module, then new module is created. [Core] 
 
-AC-2D2: Given module does already exist, when Cassie creates a task, then study planner not updated and she is informed. [Edge Case]
+AC-2D2: Given module does already exist, when Cassie creates the module, then study planner is not updated and she is informed. [Edge Case] 
 
 
 **Graham Sutherland**
