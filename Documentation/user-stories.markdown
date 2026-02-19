@@ -11,13 +11,17 @@
 1E: As Stewart, I want to have a prioritisation system, so that I know how to best use my time. 
 
 
+
 **Cassie Sturday**
 
-2A: As Cassie, I want lecture information to be automatically consolidated in one place so that I don't have to spend ages looking for it. 
+2A: As Cassie, I want task information to be automatically consolidated in one place so that I don't have to spend ages looking for it.
 
-2B: As Cassie, I want to be able to make changes to lecture booking and the students are aware of it so that students are still about to attend the lectures. 
+2B: As Cassie, I want to be able to make changes to tasks deadlines and the students are aware of it so that students are still about to complete task in time.
 
-2C: As Cassie, I want to make booking that do not overlap with other booking so that all students can attend my lectures. 
+2C: As Cassie, I want to make tasks so that all students can view the tasks.
+
+2D: As Cassie, I want to create modules so that all students can join them.
+
 
 
 **Graham Sutherland**
