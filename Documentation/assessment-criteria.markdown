@@ -25,7 +25,25 @@ AC-1E1: Given Stewart has a stable internet connection, when Stewart sets his pr
 
 **Cassie Sturday**
 
+AC-2A1: Given - that event information already exists When - Cassie view study planner Then - all relevant information is shown. [Core]
 
+AC-2A2: Given - that event information does not already exists When - Cassie view study planner Then - she is informed that no information is available. [Edge Case]
+
+AC-2B1: Given - task exists When - Cassie makes changes a task Then - Task is updated on study planner. [Core]
+
+AC-2B2: Given - task does not exist When - Cassie makes changes a task Then - task is changed and she is informed it doesn't exist. [Edge Case]
+
+AC-2B3: Given - cassie has permission to update a specific task when - Cassie updates the task information Then - the information should be consolidated into an area that makes logical sense for the end-user. [NFR]
+
+AC-2C1: Given - module exists When -  Cassie creates a task Then - all student can view task. [Core]
+
+AC-2C2: Given - module does not exist. When -  Cassie creates a taskThen - study planner not updated and she is informed.[Edge Case]
+
+AC-2C3: Given - Cassie has permission to add a task and has internet access When - Cassie creates a task Then - The booking should be updated and relayed to the students in a timely manner. [NFR]
+
+AC-2D1: Given - module does not already exist When -  Cassie creates a task Then - new module is created. [Core]
+
+AC-2D2: Given - module does already exist. When -  Cassie creates a task Then - study planner not updated and she is informed. [Edge Case]
 
 
 **Graham Sutherland**
