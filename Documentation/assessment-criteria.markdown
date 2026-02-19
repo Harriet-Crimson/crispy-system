@@ -25,11 +25,11 @@ AC-1E1: Given Stewart has a stable internet connection, when Stewart sets his pr
 
 **Cassie Sturday**
 
-AC-2A1: Given - that event information already exists When - Cassie view study planner Then - all relevant information is shown. [Core]
+AC-2A1: Given that event information already exists, when Cassie view study planner, then all relevant information is shown. [Core]
 
-AC-2A2: Given - that event information does not already exists When - Cassie view study planner Then - she is informed that no information is available. [Edge Case]
+AC-2A2: Given that event information does not already exists, when Cassie view study planner then she is informed that no information is available. [Edge Case]
 
-AC-2B1: Given - task exists When - Cassie makes changes a task Then - Task is updated on study planner. [Core]
+AC-2B1: Given task exists, when Cassie makes changes a task then Task is updated on study planner. [Core]
 
 AC-2B2: Given - task does not exist When - Cassie makes changes a task Then - task is changed and she is informed it doesn't exist. [Edge Case]
 
