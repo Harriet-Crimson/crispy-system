@@ -47,6 +47,7 @@ AC-2D2: Given module does already exist, when Cassie creates a task, then study 
 
 
 **Graham Sutherland**
+
 AC-3A1: Given a student exists, when Graham adds student to a module, then the student is added to the module. [Core] 
 
 AC-3A2: Given a student does not exist, when Graham adds student to a module then, the student is not added to the module and Graham is informed. [Edge Case] 
