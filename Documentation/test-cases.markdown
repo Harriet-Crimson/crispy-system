@@ -1,4 +1,4 @@
-User story: 1B
+**User story: 1B**
 Precondition: Pre-existing study profile
 Input: click
 Action: Select a module
@@ -8,7 +8,7 @@ Expected Result:
 - Response time < 3 seconds
 
 
-User story: 1B
+**User story: 1B**
 Precondition: Pre-existing study profile
 Input: click
 Action: Select study dashboard
@@ -19,7 +19,7 @@ Expected Result:
 - Displays Gantt chart representation of student-entered data
 - Response time < 4 seconds
 
-User story: 1C
+**User story: 1C**
 Precondition: Pre-existing task
 Input: valid activity, at least time taken
 Action: Submit activity to task
@@ -28,7 +28,7 @@ Expected Result:
 - Progress bar updated
 - Response time < 1 second
 
-User story: 2B
+**User story: 2B**
 Precondition: pre-existing task
 Input: new date
 Action: change deadline
@@ -36,8 +36,8 @@ Expected result:
 - The deadlines for all students assignment change to the user input date
 - Response time < 1 minute
 
-User story: 2C
-precondition: pre-existing module
+**User story: 2C**
+Precondition: pre-existing module
 Input: task details
 Action: submit task
 Expected result:
