@@ -1,38 +1,38 @@
 **Database:**
-* Student Schema
+* Student Table
   * Has a unique code
   * Stores the first name
   * Stores the last name
   * Stores the email
   * Stores the password(?)
-* Tutor Schema
+* Tutor Table
   * Has a unique code
   * Stores the name 
   * Stores the last name 
   * Stores the email
   * Stores the password(?)
-* Module Schema
+* Module Table
   * Has a unique code
   * Has the code of the tutor taking it
-* Assignment Schema
+* Assignment Table
   * Has a unique code
   * Has the code of the module it belongs to
   * Has the date of the deadline
   * Has a value for the assignments weight
   * Should be deleted when module is deleted
-* Tasks Schema
+* Tasks Table
   * Has a unique code
   * Has the code of assignment it belongs to
   * Has the task type (studying, programming, writing - is a defined set of types)
   * Has the code of the task that it depends on
   * Should be deleted when assignment is deleted
-* Progress Schema
+* Progress Table
   * Has a unique code
   * Stores the student code
   * Stores the task code
   * Update’s progress value when students add to the task
   * Should be deleted when task or student is deleted
-* Semester Schema
+* Semester Table
   * Has a unique code
   * Stores the code of a student
   * Stores the code of their module
