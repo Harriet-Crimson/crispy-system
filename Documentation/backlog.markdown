@@ -25,19 +25,24 @@
   * Has the code of assignment it belongs to
   * Has the task type (studying, programming, writing - is a defined set of types)
   * Has the code of the task that it depends on
+  * Can store the code of module it belongs to
   * Should be deleted when assignment is deleted
 * Progress Table
-  * Has a unique code
+  * Has a composite primary key
   * Stores the student code
   * Stores the task code
   * Update’s progress value when students add to the task
   * Should be deleted when task or student is deleted
 * Semester Table
-  * Has a unique code
   * Stores the code of a student
   * Stores the code of their module
+  * Has a composite primary key
   * Be deleted when student or module are deleted
-
+* Milestone Table
+  * Has unique code
+  * Stores the deadline
+  * Stores the code of assignment it belongs to
+  * Deleted when its assignment is deleted
 
 **Website:** 
 (check with wireframes, if change is made write about it in report design rationale)
