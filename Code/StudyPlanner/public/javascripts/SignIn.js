@@ -64,7 +64,7 @@ let password = passwordInput.value; //should hash at some point
 if (signUp){
     let accountTypeInput = document.getElementById("accountTypeField"); //NB: may be repeat of accountTypeDisplay
     if (accountTypeInput[0].checked){
-        let accountType = "student";
+        let accountType = "student";//Can be used to dictate which table they are insterted into -AG
     }else if(accountTypeInput[1].checked){
         let accountType = "staff";
     }else{
