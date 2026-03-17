@@ -1,3 +1,12 @@
+/*
+ Created on: 17/03/2026
+ version: 1.0.0
+ description: JavaScript for the backend of the login page -- sign in function.
+ author(s): Keelan
+ date: 17/03/2026
+*/
+
+
 /*Sign up
 from sign in page click sign up button, takes to sign up page.
 Enter username and password and select staff or student, submit.

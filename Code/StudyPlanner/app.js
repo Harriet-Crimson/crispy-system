@@ -1,3 +1,10 @@
+/*
+ Created on: 17/03/2026
+ version: 1.0.0
+ description: JavaScript for node.js.
+ author(s): the system
+ date: 17/03/2026
+*/
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
