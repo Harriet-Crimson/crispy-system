@@ -53,11 +53,15 @@ function displaySignUp(){
     //assumes inputs for account type are now displayed
 }
 
-//Enter username and password 
-let usernameInput = document.getElementById("username");
+//Enter email, first name, last name and password 
+let emailInput = document.getElementById("email");
+let firstNameInput = document.getElementById("firstName");
+let lastNameInput = document.getElementById("lastName");
 let passwordInput = document.getElementById("password");
 
-let username = usernameInput.value;
+let email = emailInput.value;
+let firstName = firstNameInput.value;
+let lastName = lastNameInput.value;
 let password = passwordInput.value; //should hash at some point
 
 //select staff or student (if signing up)
