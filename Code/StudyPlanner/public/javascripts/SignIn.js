@@ -7,13 +7,6 @@
 */
 
 
-/*Sign up
-from sign in page click sign up button, takes to sign up page.
-Enter username and password and select staff or student, submit.
-Input validation.
-Add credentials to database.
-Take to user page
-*/
 /* Log in
 Enter username and password, submit.
 Check database.
@@ -28,17 +21,12 @@ if not in databse, show error message.
 //     .then((resData) => {
 
 
-//variable for sign in or sign up
-let signUp = false;
 
-//Sign in
 //from sign in page click sign up button, takes to sign up page.
 let signUpButton = document.getElementById("signUpButton");//ID subject to change
 signUpButton.addEventListener("submit", displaySignUp);
 function displaySignUp(){
     //changes sign up variable
-    signUp = true;
-
 // changes "sign in" to "sign up"
     let signInText = document.getElementById("signInText");//ID subjext to change
     signInText.textContent = "Sign up";
@@ -64,41 +52,11 @@ let firstName = firstNameInput.value;
 let lastName = lastNameInput.value;
 let password = passwordInput.value; //should hash at some point
 
-//select staff or student (if signing up)
-if (signUp){
-    let accountTypeInput = document.getElementById("accountTypeField"); //NB: may be repeat of accountTypeDisplay
-    if (accountTypeInput[0].checked){
-        let accountType = "student";//Can be used to dictate which table they are insterted into -AG
-    }else if(accountTypeInput[1].checked){
-        let accountType = "staff";
-    }else{
-        let accountType = "invalid";
-    }
-}
-
-
-
-
 let validCredentials = false;
-if (signUp){
-    //input validation
-    /* TO DO:
-    Password must be 8 characters
-    Must use combination of numbers, lower case and upper case characters and special characters.
-    Ensure SQL commands etc have no impact
-    */
-// pattern for digits, special characters, lowercase letters amd upper case letters, ensuring at least 8 characters long and ensures at least one of each character type
-// ^ is start of pattern, $ is end of pattern
-   let regex = /^(?=.*\d)(?=.*[!@#$%^&?<>()])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-   if (password.value.match(regex)){
-       //add credentials
-   }
 
+//validate credentials
+// if (valid){validCredentials= true;}
 
-}else{
-    //validate credentials
-    // if (valid){validCredentials= true;}
-}
           
 //if correct credentials
 //display user page
